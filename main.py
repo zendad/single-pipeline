@@ -5,7 +5,6 @@ import sys
 
 LOGGER = logging.getLogger(__name__)
 
-
 if __name__ == "__main__":
     module_number = sys.argv[1]
 
