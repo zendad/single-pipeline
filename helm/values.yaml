@@ -1,0 +1,28 @@
+# Default values for modules.
+# This is a YAML-formatted file.
+# Declare variables for templates.
+replicaCount: 3
+moduleNumber: 
+image:
+  repository: 
+  tag: 
+  pullPolicy: IfNotPresent
+service:
+  enabled: false
+  name: nginx
+  type: ClusterIP
+  externalPort: 8080
+  internalPort: 8080
+ingress:
+  enabled: false
+nodeSelector: {}
+tolerations: []
+imagePullSecrets: gcr-secret
+securityContext: {}
+resources: {}
+    limits:
+     cpu: 400m
+     memory: 512Mi
+    requests:
+     cpu: 100m
+     memory: 128Mi
